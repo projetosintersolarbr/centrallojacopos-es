@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amo Eco | Copos.ind do Brasil - Fábrica e Distribuição de Copos Ecológicos</title>
+    <!-- Tailwind CSS para design ágil, limpo e responsivo -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome para ícones de alta fidelidade -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts: Inter para tipografia moderna e legível -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#0b3c2c',      /* Deep Emerald / Verde Eco Floresta */
+                        secondary: '#115540',    /* Slate Emerald / Tom de Seções */
+                        accent: '#cba135',       /* Ouro Bambu / Dourado Ecológico */
+                        accentHover: '#b38c2a',  /* Dourado Escuro Hover */
+                        success: '#10b981',      /* Verde Ativo */
+                        bgLight: '#f0f6f4'       /* Fundo Off-White Clorofila */
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #115540;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #cba135;
+            border-radius: 3px;
+        }
+        .glow-effect {
+            box-shadow: 0 0 15px rgba(203, 161, 53, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-primary text-slate-100 font-sans antialiased custom-scrollbar">
+
+    <!-- Topbar B2B focado em conversão de atacado -->
+    <div class="bg-black text-slate-400 text-[11px] py-2.5 border-b border-slate-900 tracking-wider">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-4 flex-wrap justify-center">
+                <span><i class="fa-solid fa-leaf text-accent mr-1"></i> Fabricação Nacional Sustentável (Rio dos Cedros/SC)</span>
+                <span class="hidden sm:inline">|</span>
+                <span><i class="fa-solid fa-truck-fast text-accent mr-1"></i> Envio Expresso para todo o Brasil</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <span class="font-bold text-white"><i class="fa-solid fa-boxes-stacked text-accent mr-1"></i> Pedido Mínimo Faturado: R$ 1.000</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header Principal da Marca Amo Eco -->
+    <header class="bg-primary/95 sticky top-0 z-50 shadow-lg border-b border-slate-900 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <!-- Logo Amo Eco -->
+            <div class="flex items-center gap-3">
+                <div class="bg-gradient-to-br from-primary to-secondary text-white p-2.5 rounded-lg flex items-center justify-center border border-accent/25 glow-effect">
+                    <i class="fa-solid fa-recycle text-xl text-accent"></i>
+                </div>
+                <div>
+                    <span class="text-xl font-black tracking-wider text-white">AMO<span class="text-accent">ECO</span></span>
+                    <span class="block text-[8px] uppercase tracking-[0.3em] text-slate-400 font-bold">Copos.ind do Brasil Industria LTDA</span>
+                </div>
+            </div>
+
+            <!-- Dados Operacionais no Header para passar autoridade -->
+            <div class="hidden lg:flex flex-col items-end">
+                <span class="text-xs font-semibold text-slate-400">CNPJ: 19.309.032/0001-00</span>
+                <div class="flex items-center gap-1.5 mt-0.5">
+                    <span class="h-2 w-2 rounded-full bg-success animate-pulse"></span>
+                    <span class="text-[10px] font-bold text-success uppercase tracking-wider">Situação: Ativa • Desde 2013</span>
+                </div>
+            </div>
+            
+            <a href="#contato" class="bg-accent hover:bg-accentHover text-primary px-5 py-2.5 rounded-md text-xs font-bold uppercase tracking-widest transition-all flex items-center gap-2 glow-effect">
+                <i class="fa-solid fa-file-pdf"></i> Baixar Catálogo 2026
+            </a>
+        </div>
+    </header>
+
+    <!-- Seção de Atalhos de Linha de Produtos no Topo -->
+    <section class="bg-secondary border-b border-slate-900 py-6">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center md:text-left mb-4">
+                <span class="text-xs font-bold text-accent uppercase tracking-widest block mb-1">Portfólio de Fabricação Sustentável</span>
+                <h2 class="text-base font-extrabold text-white flex items-center justify-center md:justify-start gap-2">
+                    <i class="fa-solid fa-list-check text-accent"></i> Principais Categorias e Soluções em Brindes & Eventos:
+                </h2>
+            </div>
+            
+            <!-- Grid de Atalhos de Produtos de Utilidade Eco -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                <!-- Linha 1 -->
+                <a href="#simulador" class="bg-primary/50 p-4 rounded-lg border border-slate-800 hover:border-accent hover:shadow-lg transition-all duration-300 group">
+                    <div class="flex items-center gap-3">
+                        <div class="p-2.5 bg-secondary text-slate-300 rounded-md group-hover:bg-accent group-hover:text-primary transition-all">
+                            <i class="fa-solid fa-glass-water text-base"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-extrabold text-white group-hover:text-accent transition-all">Copos Reutilizáveis</h4>
+                            <p class="text-[9px] text-slate-400 mt-0.5">PP Livre de BPA e Alta Durabilidade</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Linha 2 -->
+                <a href="#simulador" class="bg-primary/50 p-4 rounded-lg border border-slate-800 hover:border-accent hover:shadow-lg transition-all duration-300 group">
+                    <div class="flex items-center gap-3">
+                        <div class="p-2.5 bg-secondary text-slate-300 rounded-md group-hover:bg-accent group-hover:text-primary transition-all">
+                            <i class="fa-solid fa-whiskey-glass text-base"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-extrabold text-white group-hover:text-accent transition-all">Linha Eco-Fibras</h4>
+                            <p class="text-[9px] text-slate-400 mt-0.5">Copos com Fibra de Coco e Madeira</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Linha 3 -->
+                <a href="#simulador" class="bg-primary/50 p-4 rounded-lg border border-slate-800 hover:border-accent hover:shadow-lg transition-all duration-300 group">
+                    <div class="flex items-center gap-3">
+                        <div class="p-2.5 bg-secondary text-slate-300 rounded-md group-hover:bg-accent group-hover:text-primary transition-all">
+                            <i class="fa-solid fa-beer-mug-empty text-base"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-extrabold text-white group-hover:text-accent transition-all">Canecas para Eventos</h4>
+                            <p class="text-[9px] text-slate-400 mt-0.5">Canecas de Chopp e Café Eco</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Linha 4 -->
+                <a href="#simulador" class="bg-primary/50 p-4 rounded-lg border border-slate-800 hover:border-accent hover:shadow-lg transition-all duration-300 group">
+                    <div class="flex items-center gap-3">
+                        <div class="p-2.5 bg-secondary text-slate-300 rounded-md group-hover:bg-accent group-hover:text-primary transition-all">
+                            <i class="fa-solid fa-palette text-base"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-extrabold text-white group-hover:text-accent transition-all">Personalização 360º</h4>
+                            <p class="text-[9px] text-slate-400 mt-0.5">Silk e Transfer Digital Direto de Fábrica</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hero Section Especializada B2B / Atacado -->
+    <section class="relative bg-gradient-to-br from-[#02120e] via-primary to-[#010907] text-white overflow-hidden py-16 lg:py-24 border-b border-slate-900">
+        <!-- Textura e Grafismos Sustentáveis de Fundo -->
+        <div class="absolute inset-0 opacity-5 bg-[radial-gradient(#cba135_1px,transparent_1px)] [background-size:24px_24px]"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Conteúdo Comercial (Value Pitch) -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 bg-accent/10 border border-accent/35 text-accent px-4 py-1.5 rounded-full text-xs font-bold tracking-widest uppercase">
+                        <i class="fa-solid fa-certificate"></i> Indústria Oficial de Copos Reutilizáveis • Desde 2013
+                    </div>
+                    
+                    <h1 class="text-3xl md:text-5xl font-black leading-tight tracking-tight text-white">
+                        Fábrica de copos e canecas ecológicas para <span class="text-accent">distribuidores, revendedores, lojas e grandes eventos</span>.
+                    </h1>
+                    
+                    <p class="text-slate-400 text-sm md:text-base max-w-xl leading-relaxed">
+                        Abasteça seu estoque comercial ou atenda campanhas promocionais de grandes marcas com preços competitivos de atacado direto de fábrica. Matérias-primas certificadas, reutilizáveis e 100% recicláveis.
+                    </p>
+
+                    <!-- Benefícios de Fábrica -->
+                    <div class="grid sm:grid-cols-2 gap-4 pt-4">
+                        <div class="flex items-start gap-3">
+                            <span class="text-accent bg-accent/10 p-2 rounded-md mt-0.5"><i class="fa-solid fa-coins"></i></span>
+                            <div>
+                                <h3 class="font-bold text-xs uppercase tracking-wider text-white">Pedido Mínimo de R$ 1.000</h3>
+                                <p class="text-[11px] text-slate-400">Desenvolvido sob medida para lojistas, CNPJ corporativo e agências.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <span class="text-accent bg-accent/10 p-2 rounded-md mt-0.5"><i class="fa-solid fa-clock"></i></span>
+                            <div>
+                                <h3 class="font-bold text-xs uppercase tracking-wider text-white">Despacho Logístico Ágil</h3>
+                                <p class="text-[11px] text-slate-400">Produção acelerada para atender cronogramas rígidos de eventos em todo o país.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <span class="text-accent bg-accent/10 p-2 rounded-md mt-0.5"><i class="fa-solid fa-scale-balanced"></i></span>
+                            <div>
+                                <h3 class="font-bold text-xs uppercase tracking-wider text-white">Optante pelo Simples Nacional</h3>
+                                <p class="text-[11px] text-slate-400">Regularidade fiscal total para compras interestaduais sem entraves tributários.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <span class="text-accent bg-accent/10 p-2 rounded-md mt-0.5"><i class="fa-solid fa-seedling"></i></span>
+                            <div>
+                                <h3 class="font-bold text-xs uppercase tracking-wider text-white">Matéria-Prima Sustentável</h3>
+                                <p class="text-[11px] text-slate-400">Livre de bisfenol-A (BPA Free), plásticos reciclados premium e opções de fibra natural.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formulário de Leads com Foco em Vendas B2B -->
+                <div class="lg:col-span-5" id="contato">
+                    <div class="bg-secondary rounded-xl p-6 lg:p-8 text-slate-100 shadow-2xl border border-slate-800 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-accent/10 rounded-full blur-2xl -mr-16 -mt-16"></div>
+                        <h3 class="text-xl font-black text-white tracking-tight relative z-10">Canal de Atendimento Atacado</h3>
+                        <p class="text-xs text-slate-400 mt-1 mb-6 relative z-10">Preencha seus dados para receber o catálogo oficial Amo Eco 2026 com tabelas de descontos escalonados por volume.</p>
+                        
+                        <form id="leadForm" onsubmit="handleFormSubmit(event)" class="space-y-4 relative z-10">
+                            <div>
+                                <label class="block text-[10px] font-extrabold text-slate-400 uppercase tracking-widest mb-1" for="name">Seu Nome / Representante</label>
+                                <input class="w-full bg-primary border border-slate-800 rounded-md px-4 py-2.5 text-xs text-white outline-none focus:border-accent transition-all" type="text" id="name" required placeholder="Ex: Willian Serpa">
+                            </div>
+                            
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-[10px] font-extrabold text-slate-400 uppercase tracking-widest mb-1" for="cnpj">CNPJ Comercial</label>
+                                    <input class="w-full bg-primary border border-slate-800 rounded-md px-4 py-2.5 text-xs text-white outline-none focus:border-accent transition-all" type="text" id="cnpj" required placeholder="19.309.032/0001-00">
+                                </div>
+                                <div>
+                                    <label class="block text-[10px] font-extrabold text-slate-400 uppercase tracking-widest mb-1" for="whatsapp">WhatsApp Corporativo</label>
+                                    <input class="w-full bg-primary border border-slate-800 rounded-md px-4 py-2.5 text-xs text-white outline-none focus:border-accent transition-all" type="tel" id="whatsapp" required placeholder="(47) 3382-9994">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-[10px] font-extrabold text-slate-400 uppercase tracking-widest mb-1" for="segment">Perfil de Compras</label>
+                                <select class="w-full bg-primary border border-slate-800 rounded-md px-4 py-2.5 text-xs text-slate-300 outline-none focus:border-accent transition-all" id="segment" required>
+                                    <option value="" disabled selected>Escolha sua categoria</option>
+                                    <option value="distribuidor">Distribuidora / Agência de Brindes</option>
+                                    <option value="revendedor">Revendedor Autônomo</option>
+                                    <option value="lojista">Lojista de Variedades / Utilidades</option>
+                                    <option value="eventos">Produtora de Festas, Festivais ou Eventos</option>
+                                    <option value="empresa">Grandes Compras para Uso Corporativo Próprio (Min R$ 1.000)</option>
+                                </select>
+                            </div>
+
+                            <button type="submit" class="w-full bg-accent hover:bg-accentHover text-primary py-3 rounded-md font-bold text-xs tracking-widest uppercase transition-all shadow-md transform active:scale-95 flex items-center justify-center gap-2 glow-effect">
+                                <i class="fa-solid fa-lock"></i> Acessar Tabela Atacadista
+                            </button>
+                            
+                            <p class="text-[10px] text-center text-slate-500 mt-2">
+                                <i class="fa-solid fa-shield-halved text-accent mr-1"></i> Protegido de acordo com as normas vigentes da LGPD.
+                            </p>
+                        </form>
+
+                        <!-- Mensagem de Sucesso (B2B Redirection) -->
+                        <div id="successMessage" class="hidden text-center py-6 space-y-4">
+                            <div class="mx-auto w-12 h-12 bg-accent/20 text-accent rounded-full flex items-center justify-center text-xl">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-extrabold text-white">Solicitação Enviada com Sucesso!</h4>
+                                <p class="text-xs text-slate-400 mt-1">Nosso time de atendimento de Santa Catarina está pronto para gerar seu orçamento. Para priorizar seu pedido, clique abaixo para abrir nosso canal no WhatsApp.</p>
+                            </div>
+                            <a id="successWhatsappLink" href="#" target="_blank" class="inline-flex items-center gap-2 bg-success hover:bg-emerald-600 text-white px-5 py-2.5 rounded-md text-xs font-bold uppercase tracking-wider transition-all w-full justify-center shadow">
+                                <i class="fa-brands fa-whatsapp text-base"></i> Conversar no WhatsApp Comercial
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Proposta de Valor e Diferenciais de Fábrica -->
+    <section class="py-20 bg-secondary">
+        <div class="max-w-7xl mx-auto px-4">
+            
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-accent font-extrabold text-xs tracking-widest uppercase">Padrão de Qualidade Industrial</span>
+                <h2 class="text-3xl font-black text-white tracking-tight mt-1">Por que escolher a Amo Eco?</h2>
+                <p class="text-slate-400 text-sm mt-3">Com mais de 12 anos de solidez fabril, somos referência em utilidades domésticas e corporativas sustentáveis de alta durabilidade e impacto ecológico positivo.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Diferencial 1 -->
+                <div class="bg-primary/50 p-8 rounded-xl border border-slate-800 hover:shadow-lg hover:border-accent/40 transition-all">
+                    <div class="text-accent bg-accent/10 w-12 h-12 rounded-lg flex items-center justify-center text-lg font-bold mb-6">
+                        <i class="fa-solid fa-industry"></i>
+                    </div>
+                    <h3 class="text-base font-bold text-white mb-3">Infraestrutura Própria em SC</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">Localizada em Rio dos Cedros/SC, nossa fábrica possui maquinário de injeção de última geração para garantir qualidade e uniformidade das peças de ponta a ponta.</p>
+                </div>
+                
+                <!-- Diferencial 2 -->
+                <div class="bg-primary/50 p-8 rounded-xl border border-slate-800 hover:shadow-lg hover:border-accent/40 transition-all">
+                    <div class="text-accent bg-accent/10 w-12 h-12 rounded-lg flex items-center justify-center text-lg font-bold mb-6">
+                        <i class="fa-solid fa-tag"></i>
+                    </div>
+                    <h3 class="text-base font-bold text-white mb-3">Tributação Facilitada (Simples)</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">Empresa optante pelo Simples Nacional desde sua fundação em 2013. Faturamento transparente, com impostos integrados para facilitar sua revenda.</p>
+                </div>
+
+                <!-- Diferencial 3 -->
+                <div class="bg-primary/50 p-8 rounded-xl border border-slate-800 hover:shadow-lg hover:border-accent/40 transition-all">
+                    <div class="text-accent bg-accent/10 w-12 h-12 rounded-lg flex items-center justify-center text-lg font-bold mb-6">
+                        <i class="fa-solid fa-leaf"></i>
+                    </div>
+                    <h3 class="text-base font-bold text-white mb-3">Materiais Biodegradáveis e Recicláveis</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">Unimos inovação com ecologia através do desenvolvimento de copos reutilizáveis de alta tiragem e canecas que reduzem a pegada de carbono de forma comprovada.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Seção Interativa: Simulador de Orçamento de Atacado Amo Eco -->
+    <section id="simulador" class="py-16 bg-primary text-white relative overflow-hidden border-t border-slate-900">
+        <div class="max-w-4xl mx-auto px-4 relative z-10">
+            <div class="text-center mb-10">
+                <span class="text-accent text-xs font-bold uppercase tracking-widest">Simulador de Benefícios B2B</span>
+                <h2 class="text-2xl md:text-3xl font-black mt-1">Simule Seu Volume e Calcule Suas Margens</h2>
+                <p class="text-xs text-slate-400 mt-2">Ajuste o controle deslizante abaixo de acordo com sua projeção de compras e confira seus benefícios atacadistas diretos.</p>
+            </div>
+
+            <div class="bg-secondary rounded-xl p-6 md:p-8 border border-slate-800 shadow-2xl">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Controles -->
+                    <div class="space-y-6">
+                        <div>
+                            <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">1. Selecione o Tipo de Produto:</label>
+                            <div class="grid grid-cols-2 gap-3">
+                                <button type="button" onclick="setSimulateType('eco')" id="simTypeEco" class="bg-accent/10 border-2 border-accent text-white px-3 py-2.5 rounded-md text-xs font-bold tracking-wider transition-all flex items-center justify-center gap-1.5">
+                                    <i class="fa-solid fa-seedling text-accent"></i> Copos Eco Reutilizáveis
+                                </button>
+                                <button type="button" onclick="setSimulateType('premium')" id="simTypePremium" class="bg-primary border border-slate-800 text-slate-400 hover:bg-slate-800 px-3 py-2.5 rounded-md text-xs font-bold tracking-wider transition-all flex items-center justify-center gap-1.5">
+                                    <i class="fa-solid fa-crown text-accent"></i> Copos & Canecas Premium
+                                </button>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between text-xs font-bold mb-2">
+                                <span class="text-slate-300 uppercase tracking-wider">2. Projete sua Compra Mensal:</span>
+                                <span class="text-accent font-extrabold" id="rangeValue">R$ 2.000</span>
+                            </div>
+                            <input type="range" id="budgetRange" min="1000" max="100000" step="1000" value="2000" oninput="updateSimulation()" class="w-full accent-accent bg-slate-800 h-2 rounded-md appearance-none cursor-pointer">
+                            <div class="flex justify-between text-[10px] text-slate-500 mt-1">
+                                <span>R$ 1.000 (Mínimo)</span>
+                                <span>R$ 100.000+</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Resultados do Canal -->
+                    <div class="bg-[#03130f] p-6 rounded-lg border border-slate-800 flex flex-col justify-between">
+                        <div>
+                            <span class="text-[9px] bg-accent/20 text-accent font-extrabold px-2 py-1 rounded-md uppercase tracking-widest">Nível de Desconto no Lote</span>
+                            <div class="mt-4">
+                                <div class="text-3xl font-black text-white" id="discountPercent">10% OFF</div>
+                                <p class="text-xs text-slate-400 mt-1">Margem Estadia de Revenda: <strong class="text-accent" id="resMargin">35% a 45% Bruto</strong></p>
+                            </div>
+                        </div>
+                        
+                        <div class="border-t border-slate-800 pt-4 mt-4 space-y-3">
+                            <div class="flex justify-between text-[11px]">
+                                <span class="text-slate-400">Personalização Inclusa:</span>
+                                <span class="font-bold text-white" id="laserDetails">Silk Screen Unilateral</span>
+                            </div>
+                            <div class="flex justify-between text-[11px]">
+                                <span class="text-slate-400">Canal de Emissão:</span>
+                                <span class="font-bold text-white">Simples Nacional (SC)</span>
+                            </div>
+                            <a href="#contato" class="block text-center bg-accent hover:bg-accentHover text-primary py-2.5 rounded-md text-xs font-bold uppercase tracking-widest transition-all mt-2 glow-effect">
+                                Garantir Condições Deste Lote
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prova Social e Dados Estátisticos de Produção -->
+    <section class="bg-black text-white py-12 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <!-- Dado 1 -->
+                <div class="space-y-1">
+                    <div class="text-3xl md:text-4xl font-black text-accent tracking-tight">12+ Anos</div>
+                    <div class="text-[10px] text-slate-400 uppercase tracking-widest font-bold">Fundada em 2013</div>
+                </div>
+                <!-- Dado 2 -->
+                <div class="space-y-1">
+                    <div class="text-3xl md:text-4xl font-black text-accent tracking-tight">+3 Milhões</div>
+                    <div class="text-[10px] text-slate-400 uppercase tracking-widest font-bold">Copos Produzidos no Sul</div>
+                </div>
+                <!-- Dado 3 -->
+                <div class="space-y-1">
+                    <div class="text-3xl md:text-4xl font-black text-accent tracking-tight">+5.000</div>
+                    <div class="text-[10px] text-slate-400 uppercase tracking-widest font-bold">Eventos & Empresas Atendidos</div>
+                </div>
+                <!-- Dado 4 -->
+                <div class="space-y-1">
+                    <div class="text-3xl md:text-4xl font-black text-accent tracking-tight">Ativa</div>
+                    <div class="text-[10px] text-slate-400 uppercase tracking-widest font-bold">Registo Receita Federal Regularizado</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeria de Portfólio & Infraestrutura Sustentável -->
+    <section id="galeria" class="py-20 bg-secondary border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Grade Visual do Portfólio -->
+                <div class="lg:col-span-6 grid grid-cols-2 gap-4">
+                    <div class="space-y-4">
+                        <div class="h-44 rounded-xl overflow-hidden shadow-md border border-slate-800">
+                            <img class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" src="https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&w=400&q=80" alt="Copos Eco Personalizados em Eventos">
+                        </div>
+                        <div class="h-60 rounded-xl overflow-hidden shadow-md border border-slate-800">
+                            <img class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" src="https://images.unsplash.com/photo-1542744094-3a31f103e35f?auto=format&fit=crop&w=400&q=80" alt="Processo de Personalização de Brindes">
+                        </div>
+                    </div>
+                    <div class="space-y-4 pt-8">
+                        <div class="h-60 rounded-xl overflow-hidden shadow-md border border-slate-800">
+                            <img class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=400&q=80" alt="Equipe de Atendimento e Vendas Amo Eco">
+                        </div>
+                        <div class="h-44 rounded-xl overflow-hidden shadow-md border border-slate-800">
+                            <img class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=400&q=80" alt="Linha de Expedição no Sul">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Breve Histórico da Empresa para Google Ads Trust -->
+                <div class="lg:col-span-6 space-y-6">
+                    <span class="text-accent font-extrabold text-xs tracking-widest uppercase">Especialistas em Reutilização</span>
+                    <h2 class="text-3xl font-black text-white tracking-tight">Indústria Sustentável Atuante em Todo o Brasil</h2>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Fundada em **25/11/2013** como **Copos.ind do Brasil Indústria LTDA**, a marca **Amo Eco** consolidou sua operação logística no coração de Santa Catarina, atendendo lojistas, distribuidores e agências promocionais nacionais.
+                    </p>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Nossa sede fabril é especializada na fusão de plásticos recicláveis premium e componentes de fibras vegetais, gerando peças únicas que aliam usabilidade prolongada a uma estética corporativa premium.
+                    </p>
+                    
+                    <div class="space-y-3">
+                        <div class="flex items-center gap-3">
+                            <span class="text-accent text-base"><i class="fa-solid fa-circle-check"></i></span>
+                            <span class="text-xs font-bold text-slate-300">Resistência térmica avançada e gravação em silk de altíssima fixação</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="text-accent text-base"><i class="fa-solid fa-circle-check"></i></span>
+                            <span class="text-xs font-bold text-slate-300">Processo ágil de expedição em Santa Catarina para todo o território nacional</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="text-accent text-base"><i class="fa-solid fa-circle-check"></i></span>
+                            <span class="text-xs font-bold text-slate-300">Padrões rigorosos de conformidade ambiental e ausência total de BPA</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Localização e Conformidade Cadastral -->
+    <section id="localizacao" class="py-16 bg-primary border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-4">
+            
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-accent font-extrabold text-xs tracking-widest uppercase">Atuação Logística de Ponta</span>
+                <h2 class="text-2xl font-black text-white tracking-tight mt-1">Nossa Estrutura e Dados Fiscais</h2>
+                <p class="text-slate-400 text-xs mt-2">Diferente de intermediários virtuais, a Amo Eco possui estrutura industrial física completa para faturamento em lotes atacadistas.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Informações do Registro Corporativo -->
+                <div class="bg-secondary p-6 md:p-8 rounded-xl border border-slate-800 flex gap-4">
+                    <div class="text-accent text-2.5xl pt-1">
+                        <i class="fa-solid fa-address-card"></i>
+                    </div>
+                    <div>
+                        <span class="bg-primary text-slate-300 text-[9px] font-bold uppercase tracking-wider px-2 py-0.5 rounded">Transparência Cadastral</span>
+                        <h3 class="font-bold text-base text-white mt-2">Dados Tributários e Governança</h3>
+                        <p class="text-xs text-slate-400 mt-2 leading-relaxed">Sociedade Empresária Limitada enquadrada como Empresa de Pequeno Porte (EPP). Optante pelo Simples Nacional de forma ininterrupta desde a abertura em 2013, assegurando total isenção burocrática nas transações interestaduais.</p>
+                        <p class="text-[10px] font-semibold text-slate-500 mt-3">Razão Social: Copos.ind do Brasil Industria LTDA • Capital Social: R$ 100.000,00</p>
+                    </div>
+                </div>
+
+                <!-- Endereço e Distribuição de Santa Catarina -->
+                <div class="bg-secondary p-6 md:p-8 rounded-xl border border-slate-800 flex gap-4">
+                    <div class="text-accent text-2.5xl pt-1">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div>
+                        <span class="bg-primary text-slate-300 text-[9px] font-bold uppercase tracking-wider px-2 py-0.5 rounded">Parque Fabril Matriz</span>
+                        <h3 class="font-bold text-base text-white mt-2">Rio dos Cedros - SC</h3>
+                        <p class="text-xs text-slate-400 mt-2 leading-relaxed">Instalação gerencial na Rua Otto Uecker, 1395, Galpao01, Santo Antonio. Posição estratégica no polo fabril catarinense para agilizar coletas de grandes transportadoras nacionais.</p>
+                        <p class="text-[10px] text-slate-500 mt-2">Rua Otto Uecker, 1395 • Bairro: Santo Antonio • CEP: 89121-000</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FAQ - Dúvidas Comuns B2B -->
+    <section class="py-16 bg-secondary border-t border-slate-900">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <span class="text-accent text-xs font-bold uppercase tracking-widest">Suporte Direto da Fábrica</span>
+                <h2 class="text-2xl font-black text-white mt-1">Perguntas Frequentes (Atacado)</h2>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="bg-primary/50 p-5 rounded-lg border border-slate-800 shadow-sm">
+                    <button class="w-full text-left flex justify-between items-center font-bold text-sm text-white" onclick="toggleFaq(1)">
+                        <span>Qual é a quantidade de pedido mínimo atacadista?</span>
+                        <i id="faq-icon-1" class="fa-solid fa-chevron-down text-accent"></i>
+                    </button>
+                    <div id="faq-content-1" class="hidden mt-3 text-xs text-slate-400 leading-relaxed border-t border-slate-800 pt-3">
+                        Para mantermos o faturamento direto de fábrica com os melhores custos nacionais, nosso ticket mínimo operacional de atacado é de **R$ 1.000,00** por transação fiscal.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="bg-primary/50 p-5 rounded-lg border border-slate-800 shadow-sm">
+                    <button class="w-full text-left flex justify-between items-center font-bold text-sm text-white" onclick="toggleFaq(2)">
+                        <span>Como funciona a personalização das logos nos copos e canecas?</span>
+                        <i id="faq-icon-2" class="fa-solid fa-chevron-down text-accent"></i>
+                    </button>
+                    <div id="faq-content-2" class="hidden mt-3 text-xs text-slate-400 leading-relaxed border-t border-slate-800 pt-3">
+                        Utilizamos tecnologias de gravação direta via Silk Screen industrial de alta fixação e Transfer Térmico Digital para layouts policromáticos. Nosso time de arte envia layouts de prova digital totalmente sem custos após a abertura do pedido.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="bg-primary/50 p-5 rounded-lg border border-slate-800 shadow-sm">
+                    <button class="w-full text-left flex justify-between items-center font-bold text-sm text-white" onclick="toggleFaq(3)">
+                        <span>Como é calculado o frete a partir da matriz de Rio dos Cedros/SC?</span>
+                        <i id="faq-icon-3" class="fa-solid fa-chevron-down text-accent"></i>
+                    </button>
+                    <div id="faq-content-3" class="hidden mt-3 text-xs text-slate-400 leading-relaxed border-t border-slate-800 pt-3">
+                        O envio é cotado via transportadoras parceiras homologadas com tarifas exclusivas de atacado (FOB ou CIF dependendo do volume). Clientes também podem optar por agendar coletas diretamente em nossa expedição.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Call To Action Final (CTA) -->
+    <section class="bg-primary py-16 text-white text-center border-t border-slate-900">
+        <div class="max-w-4xl mx-auto px-4 space-y-6">
+            <h2 class="text-2xl md:text-3.5xl font-black tracking-tight">Leve a Identidade da Sua Marca ao Próximo Nível</h2>
+            <p class="text-sm text-slate-400 max-w-xl mx-auto">
+                Conecte-se agora com nossa assessoria comercial atacadista em Santa Catarina via WhatsApp ou preencha o formulário rápido de cotação para receber amostras e tabelas exclusivas.
+            </p>
+            <div class="pt-4 flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="https://wa.me/554733829994?text=Olá! Gostaria de falar com o time comercial da Amo Eco Copos.ind sobre lotes de atacado." class="inline-flex items-center gap-2.5 bg-accent text-primary hover:bg-accentHover px-8 py-4 rounded-md font-extrabold text-xs tracking-wider uppercase shadow-2xl transition-all glow-effect" target="_blank">
+                    <i class="fa-brands fa-whatsapp text-base"></i> Conversar via WhatsApp (47) 3382-9994
+                </a>
+                <a href="#contato" class="inline-flex items-center gap-1.5 border border-slate-800 hover:border-slate-500 px-6 py-4 rounded-md font-extrabold text-xs tracking-wider uppercase transition-all">
+                    Solicitar Orçamento Digital
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Botão de WhatsApp Comercial Flutuante -->
+    <a href="https://wa.me/554733829994?text=Olá! Gostaria de falar com o time comercial da Amo Eco Copos.ind sobre lotes de atacado." class="fixed bottom-6 right-6 bg-emerald-600 hover:bg-emerald-700 text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-2xl z-50 transition-all hover:scale-110 animate-bounce" target="_blank" title="Fale com a equipe Amo Eco">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Rodapé e Compliance Google Ads -->
+    <footer class="bg-[#030e0b] text-slate-500 text-xs py-16 border-t border-slate-950">
+        <div class="max-w-7xl mx-auto px-4">
+            
+            <div class="grid md:grid-cols-12 gap-12 border-b border-slate-900 pb-12 mb-12">
+                <!-- Coluna 1: Dados Jurídicos -->
+                <div class="md:col-span-5 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="bg-gradient-to-br from-primary to-secondary text-white p-2 rounded flex items-center justify-center border border-slate-800">
+                            <i class="fa-solid fa-recycle text-xs text-accent"></i>
+                        </div>
+                        <span class="text-xs font-black tracking-widest text-white uppercase">COPOS.IND DO BRASIL INDUSTRIA LTDA</span>
+                    </div>
+                    <p class="leading-relaxed text-slate-500 text-[11px]">
+                        **Amo Eco** • CNPJ: 19.309.032/0001-00 • Matriz de Operações.<br>
+                        Produção especializada de copos reutilizáveis, canecas personalizadas, artigos de fibra sustentável e brindes de alto impacto ecológico.
+                    </p>
+                    <p class="text-[9px] text-slate-600">
+                        Regime Tributário: Optante pelo Simples Nacional • Sede de produção estabelecida em Rio dos Cedros, Santa Catarina desde 25/11/2013.
+                    </p>
+                </div>
+
+                <!-- Coluna 2: Faturamento & Suporte -->
+                <div class="md:col-span-3 space-y-3">
+                    <h4 class="font-extrabold text-white text-[11px] uppercase tracking-widest">Canais de Atendimento</h4>
+                    <ul class="space-y-2 text-slate-500 text-[11px]">
+                        <li><i class="fa-solid fa-phone text-accent mr-1.5"></i> (47) 3382-9994</li>
+                        <li><i class="fa-solid fa-envelope text-accent mr-1.5"></i> willianserpa@tpa.com.br</li>
+                    </ul>
+                </div>
+
+                <!-- Coluna 3: Matriz SC -->
+                <div class="md:col-span-4 space-y-3">
+                    <h4 class="font-extrabold text-white text-[11px] uppercase tracking-widest">Matriz Industrial</h4>
+                    <p class="leading-relaxed text-[11px] text-slate-500">
+                        Rua Otto Uecker, 1395 - Galpão 01<br>
+                        Bairro: Santo Antonio • CEP: 89121-000<br>
+                        Rio dos Cedros - SC
+                    </p>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Rua+Otto+Uecker+1395+Rio+dos+Cedros+Santa+Catarina" target="_blank" class="inline-flex items-center gap-1.5 text-accent hover:text-white font-bold mt-1 transition-all">
+                        <i class="fa-solid fa-map-location-dot text-xs"></i> Abrir Localização no Maps
+                    </a>
+                </div>
+            </div>
+
+            <!-- Rodapé Legal (Google Ads Compliant) -->
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <p class="text-center md:text-left text-[11px] text-slate-600">
+                    &copy; 2026 Amo Eco Copos.ind do Brasil. Todos os direitos reservados. CNPJ: 19.309.032/0001-00.
+                </p>
+                
+                <!-- Links de Políticas e Termos Obrigatórios para Aprovação do Google Ads -->
+                <div class="flex items-center gap-4 flex-wrap justify-center text-[11px] text-slate-600 font-bold">
+                    <a href="javascript:void(0)" onclick="openModal('privacy')" class="hover:text-slate-400 transition-all">Política de Privacidade</a>
+                    <span>|</span>
+                    <a href="javascript:void(0)" onclick="openModal('terms')" class="hover:text-slate-400 transition-all">Termos de Uso</a>
+                    <span>|</span>
+                    <a href="javascript:void(0)" onclick="openModal('cookies')" class="hover:text-slate-400 transition-all">Política de Cookies</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Modal Dinâmico de Termos e Políticas (Regra Google Ads) -->
+    <div id="policyModal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-[100] hidden items-center justify-center p-4">
+        <div class="bg-secondary border border-slate-800 rounded-xl max-w-2xl w-full p-6 md:p-8 max-h-[80vh] overflow-y-auto relative">
+            <button onclick="closeModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white text-lg">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <h3 id="modalTitle" class="text-lg font-bold text-white mb-4 uppercase tracking-wider"></h3>
+            <div id="modalContent" class="text-xs text-slate-400 leading-relaxed space-y-4"></div>
+        </div>
+    </div>
+
+    <!-- Script de Dinâmica Comercial e Integrações -->
+    <script>
+        // Configuração de dados de simulação
+        let currentType = 'eco';
+
+        function setSimulateType(type) {
+            currentType = type;
+            const btnEco = document.getElementById('simTypeEco');
+            const btnPremium = document.getElementById('simTypePremium');
+            
+            if (type === 'eco') {
+                btnEco.className = 'bg-accent/10 border-2 border-accent text-white px-3 py-2.5 rounded-md text-xs font-bold tracking-wider transition-all flex items-center justify-center gap-1.5';
+                btnPremium.className = 'bg-primary border border-slate-800 text-slate-400 hover:bg-slate-800 px-3 py-2.5 rounded-md text-xs font-bold tracking-wider transition-all flex items-center justify-center gap-1.5';
+            } else {
+                btnPremium.className = 'bg-accent/10 border-2 border-accent text-white px-3 py-2.5 rounded-md text-xs font-bold tracking-wider transition-all flex items-center justify-center gap-1.5';
+                btnEco.className = 'bg-primary border border-slate-800 text-slate-400 hover:bg-slate-800 px-3 py-2.5 rounded-md text-xs font-bold tracking-wider transition-all flex items-center justify-center gap-1.5';
+            }
+            updateSimulation();
+        }
+
+        function updateSimulation() {
+            const range = document.getElementById('budgetRange');
+            const value = parseInt(range.value);
+            
+            // Formatando o valor em Moeda Brasileira (R$)
+            document.getElementById('rangeValue').innerText = value.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+            
+            let discount = '5% OFF';
+            let margin = '35% a 40% Bruto';
+            let printTier = 'Silk Screen Unilateral Inclusa';
+            
+            if (value >= 80000) {
+                discount = '25% OFF';
+                margin = '50% a 60% Bruto';
+                printTier = 'Impressão Transfer 360º de Alta Tiragem + Frete Pago';
+            } else if (value >= 40000) {
+                discount = '20% OFF';
+                margin = '45% a 55% Bruto';
+                printTier = 'Gravação Frente e Verso Silk Screen Grátis';
+            } else if (value >= 15000) {
+                discount = '15% OFF';
+                margin = '40% a 50% Bruto';
+                printTier = 'Silk Screen Duas Cores Incluso';
+            } else if (value >= 5000) {
+                discount = '10% OFF';
+                margin = '35% a 45% Bruto';
+                printTier = 'Silk Screen Unilateral Inclusa';
+            }
+            
+            if (currentType === 'premium') {
+                printTier += ' (Canecas Premium)';
+            }
+            
+            document.getElementById('discountPercent').innerText = discount;
+            document.getElementById('resMargin').innerText = margin;
+            document.getElementById('laserDetails').innerText = printTier;
+        }
+
+        // Lógica de FAQ Accordion
+        function toggleFaq(index) {
+            const content = document.getElementById(`faq-content-${index}`);
+            const icon = document.getElementById(`faq-icon-${index}`);
+            
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                icon.classList.add('rotate-180');
+            } else {
+                content.classList.add('hidden');
+                icon.classList.remove('rotate-180');
+            }
+        }
+
+        // Envio do formulário de Orçamentos (B2B Leads)
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const cnpj = document.getElementById('cnpj').value;
+            const whatsapp = document.getElementById('whatsapp').value;
+            const segment = document.getElementById('segment').value;
+            
+            // Criando mensagem personalizada para o WhatsApp comercial da fábrica
+            const textMsg = `Olá! Meu nome é ${encodeURIComponent(name)}, falo em nome do CNPJ ${encodeURIComponent(cnpj)}. Gostaria de solicitar o catálogo de atacado da Amo Eco para a modalidade de ${encodeURIComponent(segment)}.`;
+            const waUrl = `https://wa.me/554733829994?text=${textMsg}`;
+            
+            // Redirecionamento amigável pós-lead
+            document.getElementById('leadForm').classList.add('hidden');
+            const successDiv = document.getElementById('successMessage');
+            successDiv.classList.remove('hidden');
+            document.getElementById('successWhatsappLink').setAttribute('href', waUrl);
+        }
+
+        // Textos dos Termos Regulamentares (Compliance Google Ads)
+        const policyTexts = {
+            privacy: {
+                title: "Política de Privacidade",
+                text: `<p>A presente política regula o tratamento de informações corporativas e dados pessoais de leads captados por meio desta landing page de faturamento atacadista e suprimento corporativo Amo Eco.</p>
+                       <p><strong>1. Coleta de Informações:</strong> Coletamos dados cadastrais comerciais como nome comercial, CNPJ, telefone de contato e perfil de compras atacadistas com o único propósito de prover cotações industriais personalizadas.</p>
+                       <p><strong>2. Tratamento de Dados:</strong> Nenhuma informação é vendida ou transferida para terceiros. Seus dados são processados localmente em nossa matriz de Santa Catarina de forma estritamente confidencial.</p>
+                       <p><strong>3. Armazenamento e Segurança:</strong> Mantemos protocolos técnicos adequados de segurança da informação para garantir a integridade dos dados inseridos em conformidade com as diretrizes da Lei Geral de Proteção de Dados (LGPD).</p>`
+            },
+            terms: {
+                title: "Termos de Uso",
+                text: `<p>Ao navegar por esta landing page, você concorda de forma expressa e integral com as diretrizes e regras comerciais estipuladas pela Copos.ind do Brasil Indústria LTDA.</p>
+                       <p><strong>1. Foco Exclusivamente B2B:</strong> O fornecimento promocional direto de fábrica, envio de amostras corporativas e acesso a faturamentos com descontos progressivos está sujeito à validação prévia de CNPJ e regularidade cadastral fiscal.</p>
+                       <p><strong>2. Ticket Mínimo de Faturamento:</strong> Como indústria de alta tiragem, reservamo-nos o direito de processar faturamentos unicamente a partir do valor mínimo de R$ 1.000,00.</p>
+                       <p><strong>3. Responsabilidade de Fretes:</strong> Os fretes logísticos de entrega são estipulados de acordo com negociação e contrato comercial por meio de transportadoras homologadas.</p>`
+            },
+            cookies: {
+                title: "Política de Cookies",
+                text: `<p>Utilizamos cookies analíticos e de remarketing de ferramentas de anúncios (Google Ads, Meta Pixels) de forma a analisar conversões, facilitar o preenchimento de leads e otimizar campanhas promocionais de atacado Amo Eco.</p>
+                       <p><strong>Configurações do Navegador:</strong> Você pode, a qualquer momento, revisar ou desativar o rastreamento de cookies alterando as diretrizes de privacidade nas configurações de seu navegador de internet de forma independente.</p>`
+            }
+        };
+
+        function openModal(type) {
+            const modal = document.getElementById('policyModal');
+            const titleEl = document.getElementById('modalTitle');
+            const contentEl = document.getElementById('modalContent');
+            
+            titleEl.innerText = policyTexts[type].title;
+            contentEl.innerHTML = policyTexts[type].text;
+            
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('policyModal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+
+        // Inicialização do simulador ao carregar
+        window.onload = function() {
+            updateSimulation();
+        }
+    </script>
+</body>
+</html>
